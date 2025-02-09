@@ -1,7 +1,7 @@
 # Quantum Project: Practical Quantum Algorithms
 
 ## Overview
-This project demonstrates practical applications of quantum computing using Python. It includes Grover's algorithm for database search with multiple marked states and quantum teleportation simulation. The focus is on showcasing how quantum computing can solve real-world problems effectively.
+This project demonstrates practical applications of quantum computing using Python. It includes Grover's algorithm for database search with multiple marked states and quantum teleportation simulation. The project solves the database searching problem using Grover's algorithm, which efficiently finds a marked item in an unsorted database. It uses quantum superposition to search all items simultaneously and amplifies the probability of the correct result through repeated iterations of Grover's oracle and diffusion operator. This makes it exponentially faster than classical search methods for large datasets.
 
 ## Features
 - **Grover's Algorithm**: Search for multiple marked states in a database with optimal performance.
