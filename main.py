@@ -1,15 +1,14 @@
-from quantum_grover import grover_algorithm
-from utils.visualization import plot_probabilities
+from algorithms.grover_application import grover_search
+from utils.initialization import initialize_superposition
 
-# Parameters
-n_qubits = 3
-marked_states = ["101", "111"]
-iterations = 2
+def main():
+    # Example: Practical application of Grover's algorithm
+    num_qubits = 3
+    marked_states = [2, 5]  # Marked states in the search space
+    print(f"Running Grover's Algorithm with marked states: {marked_states}")
+    
+    final_state = grover_search(marked_states, num_qubits)
+    print(f"Final state probabilities: {abs(final_state)**2}")
 
-# Run Grover's Algorithm
-final_state = grover_algorithm(n_qubits, marked_states, iterations)
-
-# Measure and visualize probabilities
-from utils.visualization import measure_probabilities
-probabilities = measure_probabilities(final_state)
-plot_probabilities(probabilities, n_qubits)
+if __name__ == "__main__":
+    main()
